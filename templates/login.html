@@ -1,0 +1,27 @@
+{{template "header.html" .Header}}
+
+<body>
+
+  <div class="row">
+    <div class="grid_8">
+      <h2>Login</h2>
+      <!-- %if 'message' in user_record: -->
+      <!-- %end -->
+      <form method="post" class='login_form' action="/thewayin" method="post">
+        <span><input type="text" name="username" id="username" autofocus="autofocus" placeholder="Username" value="{{.Name}}" size="30"></span>
+        <p></p>
+        <p><input type="password" name="password" id="password" placeholder="Password" value="" size="30"></p>
+        <input name="commit" type="submit" value="Login">
+      </form>
+    </div>  <!-- end of grid_8 -->
+  </div>  <!-- end of row -->
+  <div>
+    <br>
+    <br>
+    <a href="/signup">
+      <button style="background: skyblue;">Sign me up</button>
+    </a>
+  </div>
+</body>
+
+</html>

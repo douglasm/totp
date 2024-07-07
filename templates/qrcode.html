@@ -1,0 +1,23 @@
+{{template "header.html" .Header}}
+
+<body>
+
+  Welcome {{.Name}}
+  <div class="row">
+    <div class="grid_8">
+      <h2>QR Code</h2>
+      <img src="/img/{{.Image}}.png">
+    </div>  <!-- end of grid_8 -->
+  </div>  <!-- end of row -->
+
+  <div>
+    <br>
+    <br>
+    <a href="/validate">
+      <button style="background: skyblue;">Validate</button>
+    </a>
+  </div>
+
+</body>
+
+</html>

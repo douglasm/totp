@@ -1,0 +1,24 @@
+{{template "header.html" .Header}}
+
+<body>
+
+  <div class="row">
+    <div class="grid_8">
+      <h2>Signup</h2>
+      {{if .ErrorMessage}}{{.ErrorMessage}}{{else}}&nbsp;{{end}}<br>
+      <form method="post" class='login_form' action="/signup" method="post">
+        <span><input type="text" name="name" id="name" autofocus="autofocus" placeholder="E mail" value="{{.Name}}" size="30"></span>
+        <p></p>
+        <p>
+          <input type="test" name="pass1" id="pass1" placeholder="Password" value="" size="30">
+        </p>
+        <p>
+          <input type="test" name="pass2" id="pass2" placeholder="Password again" value="" size="30">
+        </p>
+        <input name="commit" type="submit" value="Signup">
+      </form>
+    </div>  <!-- end of grid_8 -->
+  </div>  <!-- end of row -->
+</body>
+
+</html>

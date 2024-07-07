@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="nav hidethis" role="navigation">
+        <div id="menuwrapper" class="wideclass">
+            <ul>
+                {{range $element := .Menu}}
+                    <li><a title="{{$element.Title}}" href="{{$element.Link}}">{{$element.Text}}</a></li>
+                {{end}}
+                &nbsp;&nbsp;
+                <li><a title="Logout" href="/logout">Logout</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>  <!--end of menuwrapper -->
+    </div>  <!--end of hide this -->
+</div> <!-- end of row -->

@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="grid_12">
+    <nav>
+      <div id="menubar" ng-controller="MenuControl">
+        <div class="hide-phone">
+          <div class="nav hidethis" role="navigation">
+            <div id="menuwrapper" class="wideclass">
+              <ul>
+                <li><a title="View customers page" href="/customers">Customers</a></li>
+                <li><a title="View transactions" href="/transactions">Transactions</a></li>
+                <li><a title="View accounts" href="/accounts">Accounts</a></li>
+                <li><a title="View prices" href="/prices">Prices</a></li>
+                <li><a title="View currencies" href="/currencies">Currencies</a></li>
+                <li>&nbsp;&nbsp;</li>
+                <li><a title="Logout" href="/logout">Logout</a></li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>  <!-- end of wideclass  -->
+          </div>  <!-- end of nav hidethis  -->
+        </div>  <!-- end of hide-phone  -->
+        <div class="tabhead">
+          &nbsp;&nbsp;Agamik
+          <label for="show-menu" class="show-menu">Menu</label>
+          <input type="checkbox" id="show-menu" role="button">
+          <ul id="menu">
+            <li><a href="/customers">Customers</a></li>
+            <li><a href="/transactions">Transactions</a></li>
+            <li><a href="/accounts">Accounts</a></li>
+            <li><a href="/prices">Prices</a></li>
+            <li><a href="/currencies">Currencies</a></li>
+            <li><a title="Logout" href="/logout">Logout</a></li>
+          </ul>
+        </div>  <!-- end of tabhead -->
+      </div>  <!-- end of menubar -->
+    </nav>
+  </div>  <!-- end of grid_12 -->
+</div>  <!-- end of row -->
