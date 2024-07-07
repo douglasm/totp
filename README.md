@@ -4,8 +4,11 @@ Time based one time password demo app. Feel free to use and modify to your heart
 
 ### Description
 
-The app will allow users to sign up, login and validate using a time based one time password. All the signups are held in a map which
-gets deleted every time the app restarts. The app listens on port 62222, ie localhost:62222
+The app will allow users to sign up, login and validate using a time based one time password. To run the app use the command
+```
+go run main.go
+```
+All the signups are held in a map which gets deleted every time the app restarts. The app listens on port 62222, ie localhost:62222
 
 There are four pages:  
 - /
